@@ -3,11 +3,22 @@
   padding-bottom: 64px;
 }
 
+.perspectiveBackground {
+  width: 100%;
+  height: 40%;
+  background: hsl(195deg, 20%, 86%);
+  position: fixed;
+  bottom: 0px;
+}
+
 .maxWidthWrapper {
+  width: 1024px;
+  position: relative;
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +35,37 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  top: 104px;
+  min-height: 500px;
+  height: 1000px;
+
+}
+
+@media (max-width: 1499px) {
+  .characterWrapper {
+    right: -100px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .characterWrapper {
+    right: 0px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .characterWrapper {
+    right: 100px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .characterWrapper {
+    right: 300px;
+  }
 }
 
 .controlColumn {
+  width: 50%;
 }
